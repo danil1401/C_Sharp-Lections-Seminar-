@@ -3,7 +3,7 @@
 2-> "-2 -1 0 1 2" */
 
 Console.Write("Введите трехзначное число N: ");
-int n=Convert.ToInt32(Console.Readline());
+int n=Convert.ToInt32(Console.ReadLine());
 while (n<100|n>999)
 {
 Console.Write("Вы ввели недопустимое число, повторите ввод :");
