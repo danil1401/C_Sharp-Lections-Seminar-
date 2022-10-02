@@ -7,6 +7,6 @@ int n=Convert.ToInt32(Console.Readline());
 while (n<100|n>999)
 {
 Console.Write("Вы ввели недопустимое число, повторите ввод :");
-    n=Convert.ToInt32(Console.ReaLine());
+    n=Convert.ToInt32(Console.ReadLine());
 }
 Console.Write ("Последняя цифра числа:"+Convert.ToString(n%10));
