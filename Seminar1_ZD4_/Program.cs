@@ -3,6 +3,8 @@
 782->2
 918->8*/
 
+
+
 Console.Write("Введите трехзначное число N: ");
 int n=Convert.ToInt32(Console.ReadLine());
 while (n<100|n>999) // Обозначает Логическое ИЛИ =|
@@ -13,6 +15,7 @@ Console.Write("Вы ввели недопустимое число, повтор
     n=Convert.ToInt32(Console.ReadLine());
 }
 Console.Write ("Последняя цифра числа:"+Convert.ToString(n%10));
+
 
 /*Другое решение задачи
 int N = 0;
