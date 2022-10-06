@@ -16,4 +16,19 @@ else
 }
 
 
-//Преподователь пропустил задачу, перейдя на 16ую задачу
+/*Решение Преподователя
+Console.WriteLine("Введиет число: ");
+int n = Convert.ToInt32(Console.ReadLine());
+
+bool ismultiplicity(int a)
+{
+    return (a%7 ==0 & a%23==0);
+}
+if (ismultiplicy(n))
+{
+    Console.WriteLine("Делится!");
+}
+else
+{
+    Console.WriteLine("Не делится");
+}*/
