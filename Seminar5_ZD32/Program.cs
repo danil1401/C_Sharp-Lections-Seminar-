@@ -2,6 +2,21 @@
 
 Console.Clear();
 
+//РЕШЕНИЕ ПРЕПОДАВАТЕЛЯ
+
+int [] array = {1, 2, 3, 4};
+int len =array.Length;
+
+Console.WriteLine();
+Console.Write("Измененный масси: ");
+
+for (int i=0;i<len;i++)
+{
+    array[i] *=-1;
+    Console.Write(array[i] + " ");
+}
+
+/*РЕШЕНИЕ НА СЕМИНАРЕ
 //Заполнение массива минимальным и максимальным
 int[] array = new Int32[4];
 
@@ -28,3 +43,4 @@ void arrayOutput(int[] arr)
         if (i < (arr.Length - 1)) Console.Write($", ");
     }
 }
+*/
