@@ -29,10 +29,10 @@ for (int i =0 ; i<array.Length; i++)
 */
 
 //КРАСИВАЯ ВЕРСИЯ С КРАСИВЫМ КОДОМ (не работает с private static void ??)
-Console.Write("Введите длину массива: ");
+/*Console.Write("Введите длину массива: ");
 int countArr=Convert.ToInt32(Console.Readline());
 int[] arr=new int [countArr];//присваиваем длину массива после введеного значения
-RandomArray(arr, min:-20,max:21);//заполнение массива от [-20;21]
+RandomArray(arr, -20,21);//заполнение массива от [-20;21]
 PrintArr(arr);//вывод массива
 ReversArr(arr);// разворот массива
 PrintArr(arr);//вывод массива
@@ -64,4 +64,47 @@ PrintArr(arr);//вывод массива
         {
             arr[i]=random.Next(min,max);
         }
-    }
+    }*/
+/////////////////////////////////РАБОЧИЙ ВАРИАНТ КРАСИВОГО КОДА(НАЙТИ В ЧЕМ ОШИБКА С ВЫШЕ НАПИСАННЫМ КОДОМ)
+     Console.Write("Введите длину массива: ");
+            
+            int countArr = Convert.ToInt32(Console.ReadLine());
+            int[] arr = new int[countArr];
+            
+            RandomArray(arr, -20, 21); // заполнение массива от [-20; 21).
+            PrintArr(arr); // вывод массива
+            ReversArr(arr); //разворот массива
+            PrintArr(arr); // вывод массива
+        
+        
+        void ReversArr(int[] arr)
+        {
+            int count;
+            for (int i = 0; i < arr.Length / 2; i++)
+            {
+                count = arr[i];
+                arr[i] = arr[arr.Length - 1 - i];
+                arr[arr.Length - i - 1] = count;
+            }
+        }
+        
+        void PrintArr(int[] arr)
+        {
+            Console.Write("Массив: {");
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if(i != arr.Length - 1) Console.Write($"{arr[i]}, ");
+                else Console.WriteLine(arr[i] + "}");
+            }
+        }
+        
+        void RandomArray(int[] arr, int min, int max)
+        {
+            Random random = new Random();
+            for (int i = 0; i < arr.Length; i++)
+            {
+                arr[i] = random.Next(min, max);
+            }
+        }
+    
+
